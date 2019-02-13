@@ -1,0 +1,30 @@
+
+html {
+	opacity: 0;
+	width: 100%
+}
+
+body {
+	overflow-x: hidden!important
+}
+
+.loading {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: 2px solid rgba(#000, .2);
+	border-radius: 50%;
+	border-top-color: rgba(#000, .3);
+	animation: a 1s ease-in-out infinite;
+	-webkit-animation: a 1s ease-in-out infinite;
+	left: 50%;
+	top: 50%;
+	position: fixed;
+	z-index: 1
+}
+
+@keyframes a {
+	to {
+		-webkit-transform: rotate(1turn)
+	}
+}
